@@ -1,0 +1,20 @@
+body{
+    height: 100%;
+    width: 100%;
+    background: black;
+  }
+  
+  #dvd-mask{
+    -webkit-mask-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg");
+    -webkit-mask-repeat: no-repeat;
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left:0px;
+  }
+  
+  #dvd{
+    height: 10vh;
+    filter: opacity(0%);
+  }

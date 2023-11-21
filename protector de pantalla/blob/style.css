@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070707;
+  min-height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.blob-container {
+	min-height: 100vh;
+	overflow: hidden;
+	position:absolute;
+	width: 100%;
+  filter: blur(2px);
+}
+
+.blob {
+  border-radius: 50%;
+	opacity: 0.8;
+	position: absolute;
+}
+
+.blob.one{
+	background: #82ff77;
+	height: 200px;
+	width: 200px;
+	left: 10px;
+	top: 10px;
+	animation: movement_two 18s ease-in-out infinite both;
+}
+
+.blob.two{
+	background: #a958ff;
+	height: 200px;
+	width: 200px;
+	left: 1000px;
+	top: 30px;
+	animation: movement_two 21s ease-in-out infinite both;
+}
+
+.blob.three{
+	background: #32befa;
+	height: 160px;
+	width: 160px;
+	left: 500px;
+	top: 60px;
+	animation: movement_one 12s ease-in-out infinite both;
+}
+
+.blob.four{
+	background: #1affca;
+	height: 120px;
+	width: 120px;
+	left: 480px;
+	top: 250px;
+	animation: movement_one 16s ease-in-out infinite both;
+}
+
+.blob.five{
+	background: #ff3bd8;
+	height: 100px;
+	width: 100px;
+	left: 150px;
+	top: 400px;
+	animation: movement_two 7s ease-in-out infinite both;
+}
+
+.blob.six{
+	background: #d0a3ff;
+	height: 130px;
+	width: 130px;
+	left: 400px;
+	top: 400px;
+	animation: movement_two 12s ease-in-out infinite both;
+}
+
+.blob.seven{
+	background: #ffc822;
+	height: 130px;
+	width: 130px;
+	left: 280px;
+	top: 90px;
+	animation: movement_two 13s ease-in-out infinite both;
+}
+
+.blob.eight{
+	background: #f8ff28;
+	height: 130px;
+	width: 130px;
+	left: 700px;
+	top: 400px;
+	animation: movement_two 16s ease-in-out infinite both;
+}
+
+.blob.nine{
+	background: #ff3a82;
+	height: 160px;
+	width: 160px;
+	left: 750px;
+	top: 20px;
+	animation: movement_two 10s ease-in-out infinite both;
+}
+
+.blob.ten{
+	background: #008667;
+	height: 120px;
+	width: 120px;
+	left: 920px;
+	top: 400px;
+	animation: movement_one 11s ease-in-out infinite both;
+}
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) scale(1); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(20%, 80%) scale(1.3);}
+}

@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .shape{
+    width: 72px;
+    height: 72px;
+    background: #ef15c4;
+    position: absolute;
+    border-radius: 50%;
+    opacity: var(--j);
+    animation: run 50s var(--i) infinite, colour 125s 25s linear infinite;
+    animation-fill-mode: both;
+    animation-delay: var(--i);
+  }
+  
+  @keyframes run{
+    0%{
+      left: calc(0vw - 72px);
+      top: initial;
+    }
+    
+    20.5%{
+      left: calc(100vw + 72px);
+      top: initial;
+    }
+    
+    20.6%{
+      left: calc(100vw + 72px);
+      top: calc(0vh - 72px)
+    }
+    
+    20.7%{
+      left: calc(50vw - 36px);
+      top: calc(0vh - 72px);
+    }
+    
+    40%{
+      left: calc(50vw - 36px);
+      top: calc(100vh + 72px);
+    }
+    
+    40.1%{
+      left: calc(0vw - 72px);
+      top: calc(100vh + 72px)
+    }
+    
+    60%{
+      left: calc(100vw + 72px);
+      top: calc(0vh - 72px)
+    }
+    
+    60.1%{
+      left: calc(100vw + 72px);
+      top: calc(100vh + 72px)
+    }
+    
+    80%{
+      left: calc(0vw - 72px);
+      top: calc(0vh - 72px)
+    }
+    
+    100%{
+      left: calc(0vw - 72px);
+      top: initial;
+    }
+  }
+  
+  @keyframes colour{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
